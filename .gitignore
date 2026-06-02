@@ -1,0 +1,12 @@
+*.iml
+.gradle
+.idea
+.DS_Store
+build
+captures
+.externalNativeBuild
+.cxx
+local.properties
+*.xcodeproj/project.xcworkspace
+*.xcodeproj/xcuserdata
+.kotlin
