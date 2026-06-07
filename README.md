@@ -47,6 +47,24 @@ Nota/
 └── iosApp/          # iOS entry point (SwiftUI host)
 ```
 
+## 🗺️ How it fits together
+
+```mermaid
+flowchart TD
+  AND["🤖 androidApp"]
+  IOS["🍎 iosApp"]
+  UI["🎨 core:ui · Compose MP"]
+  FEAT["📝 feature:notes"]
+  DOM["🧠 core:domain"]
+  DB["💾 core:database · SQLDelight"]
+  AND --> UI
+  IOS --> UI
+  UI --> FEAT
+  FEAT --> DOM
+  FEAT --> DB
+  DB --> DOM
+```
+
 ## 📸 Screenshots
 
 > _Captures coming soon — drop them in `docs/screenshots/` and they'll render here._
